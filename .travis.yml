@@ -8,13 +8,14 @@ before_install:
 - cp .keystore ~/.keystore
 install:
 - curl https://install.meteor.com | /bin/sh
+- export PATH=$PATH:$HOME/.meteor
 - npm install
 - npm install -g newspring/meteor-launch#update
 - wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
 - tar zxvf android-sdk_r24.4.1-linux.tgz
 - mv android-sdk-linux .android
 - export ANDROID_HOME="$TRAVIS_BUILD_DIR/.android"
-- echo y | ./android-sdk-linux/tools/android update sdk --no-ui --all --filter tools,platform-tools,build-tools-23.0.3,android-23
+- echo y | android-sdk-linux/tools/android update sdk --no-ui --all --filter tools,platform-tools,build-tools-23.0.3,android-23
 - export ANDROID_ZIPALIGN="$TRAVIS_BUILD_DIR/.android/build-tools/23.0.3/zipalign"
 script:
 - launch build launch-basic-example.meteor.com
