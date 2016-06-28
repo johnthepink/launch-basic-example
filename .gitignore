@@ -1,1 +1,12 @@
 node_modules/
+
+.build
+.fastlane
+.keystore
+google-auth.json
+launch.json
+secrets.tar
+*.mobileprovision
+*.app.dSYM.zip
+*.ipa
+*.p12
