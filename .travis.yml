@@ -1,6 +1,12 @@
 language: node_js
 node_js:
 - '4'
+before_cache:
+- rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+cache:
+  directories:
+  - $HOME/.gradle/caches/
+  - $HOME/.gradle/wrapper/
 before_install:
 - openssl aes-256-cbc -K $encrypted_767d711ae46f_key -iv $encrypted_767d711ae46f_iv
   -in .travis/secrets.tar.enc -out secrets.tar -d
