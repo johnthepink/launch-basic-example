@@ -17,6 +17,7 @@ install:
 - export ANDROID_HOME="$TRAVIS_BUILD_DIR/.android"
 - echo y | .android/tools/android update sdk --no-ui --all --filter tools,platform-tools,build-tools-23.0.3,android-23
 - export ANDROID_ZIPALIGN="$TRAVIS_BUILD_DIR/.android/build-tools/23.0.3/zipalign"
+- sudo apt-get install lib32z1
 script:
 - launch build launch-basic-example.meteor.com
 - launch hockey
