@@ -12,7 +12,7 @@ install:
 - npm install
 - npm install -g newspring/meteor-launch#update
 - wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
-- tar zxvf android-sdk_r24.4.1-linux.tgz
+- tar zxvf android-sdk_r24.4.1-linux.tgz > /dev/null
 - mv android-sdk-linux .android
 - export ANDROID_HOME="$TRAVIS_BUILD_DIR/.android"
 - echo y | .android/tools/android update sdk --no-ui --all --filter tools,platform-tools,build-tools-23.0.3,android-23
