@@ -16,7 +16,7 @@ install:
 - curl https://install.meteor.com | /bin/sh
 - export PATH=$PATH:$HOME/.meteor
 - npm install
-- npm install -g newspring/meteor-launch#update
+- npm install -g meteor-launch
 - wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
 - tar zxvf android-sdk_r24.4.1-linux.tgz > /dev/null
 - mv android-sdk-linux .android
