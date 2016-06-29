@@ -25,5 +25,6 @@ install:
 - export ANDROID_ZIPALIGN="$TRAVIS_BUILD_DIR/.android/build-tools/23.0.3/zipalign"
 - sudo apt-get install lib32z1 libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5
 script:
+- DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor METEOR_SESSION_FILE=deployment_token.json meteor deploy launch-basic-example.meteor.com
 - launch build launch-basic-example.meteor.com
 - launch hockey
