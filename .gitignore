@@ -5,6 +5,7 @@ node_modules/
 .keystore
 google-auth.json
 launch.json
+deployment_token.json
 secrets.tar
 *.mobileprovision
 *.app.dSYM.zip
