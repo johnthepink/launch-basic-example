@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/NewSpring/launch-basic-example.svg?branch=master)](https://travis-ci.org/NewSpring/launch-basic-example)
 
+1. [Build on Travis](https://travis-ci.org/NewSpring/launch-basic-example)
+2. [Site on Galaxy](https://launch-basic-example.meteorapp.com/)
+3. [App download on Hockey](https://rink.hockeyapp.net/apps/9c21ad20059c4486baf98fb9ef472a9c)
+
 ## launch.json
 
 ```json
