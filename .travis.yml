@@ -14,7 +14,6 @@ before_install:
 - cp .keystore ~/.keystore
 install:
 - curl https://install.meteor.com | /bin/sh
-- export PATH=$PATH:$HOME/.meteor
 - npm install
 - npm install -g meteor-launch
 - wget https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
