@@ -10,7 +10,6 @@
 
 ```json
 {
-  "ANDROID_BUILD_FOLDER": ".build/android",
   "ANDROID_STORE_PASS": "password",
   "ANDROID_KEY": "launch-basic-example",
   "ANDROID_ZIPALIGN": "path/to/zipalign",
