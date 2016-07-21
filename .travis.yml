@@ -24,6 +24,12 @@ install:
 - export ANDROID_ZIPALIGN="$TRAVIS_BUILD_DIR/.android/build-tools/23.0.3/zipalign"
 - sudo apt-get install lib32z1 libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5
 script:
-- launch galaxy launch-basic-example.meteorapp.com
-- launch build launch-basic-example.meteor.com
+- launch build launch-basic-example.herokuapp.com
 - launch hockey
+deploy:
+  provider: heroku
+  api_key:
+    secure: NS23vKGW8DpuU7mCcpgD6+wqK+vS/IWZ5wRAU6ny6tIKcQiCR05KqyWz/s4EaiWckEiTb2IGQmjlWrNqbr+ugV3TvqmQrgX6iwMqsMMKQqiomHwj9ZGov86O3b0M8b0aDPAvRAr8WHJKWSUchtMHwcAn2Xg/L1s6mW11y53qMs4lVIDI+VMQc4Jon3YNk8rXVcN2hGgDAUwXtCe6C+1nZxl6a1hGDOfFt9w3mWBbnfhvPd7SvSOW1avJynKcuK3jIlXbr0YBB0bsSVSBYG6tOwkussUNd+oX2QecPZZbtmajQAbpWVk6enphDB3vt6ByBvF5DmBoZPoraMWOeIWDq22F3+A+laGKg33vwwYNW2xJEUYd9BWlqCxpdss0k9jNJ6dFmpgZMHW0OCGXrfUYi4ruUaprcbk3BsKR2PWWHbWh/Vsh1vkCtKG/RyphVuGHxc4zY/Gm+AZqZBZ2ow5qZqmCAmb52dbsJFvnXueHlGomonyT5ml4UF6munEG9PDEgd6zWG5xML09xE3SnVzzw+c6x+ke67Rt5GQcPNRpbedwn0gMfYsW1DHApXA+p5Hn27HAlHd7o5rr95P5YImpZS6Dv5GiIZ3qrcHWdo+hnEVYn/k6U11vv7l5J4HAUO84e2CuCmKlvN89NZq8FMTylAXobpf0kUJS6wWX7B3YkOA=
+  app: launch-basic-example
+  on:
+    repo: NewSpring/launch-basic-example
